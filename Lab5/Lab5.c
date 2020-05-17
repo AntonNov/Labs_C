@@ -17,6 +17,11 @@ typedef struct mnumber
 /* Добавляем элемент в конец*/
 void AddDigit(MNumber* number, int digit) {
 	Item* p = (Item*)malloc(sizeof(Item));
+	if(!p)
+	{
+		printf_s("Memory allocation error");
+		exit(1);
+	}
 	p->digit = digit;
 	p->next = p->prev = NULL;
 	if (number->head == NULL)
@@ -103,6 +108,11 @@ MNumber Mult_number_Mnumber(MNumber n1, int number) {
 void Multiplyby10(MNumber *num2)
 {
 	Item* p = (Item*)malloc(sizeof(Item));
+	if(!p)
+	{
+		printf_s("Memory allocation error");
+		exit(1);
+	}
 	p->prev = NULL;
 	p->digit = 0;
 	num2->head->prev = p;
