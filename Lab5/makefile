@@ -1,4 +1,4 @@
-LAB = lab5
+LAB = Lab5
 CC = gcc
 .PHONY: all build run clean valgrind splint
 
