@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master  
-    - name: build Lab4
-      run: cd Lab4 && make 
+    - name: build Lab4 && Lab5 && Lab6
+      run: cd Lab4 && Lab5 && Lab6 && make 
     - name: make clean
-      run: cd Lab4 && make clean
+      run: cd Lab4 && Lab5 && Lab6 make clean
