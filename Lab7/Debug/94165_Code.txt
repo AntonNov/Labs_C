@@ -1,0 +1,14 @@
+ ClassName{ 
+    public: 
+          ClassName(){ 
+                  cout << “classname_constructor”; 
+            } 
+          ~ClassName(){ 
+                 cout <<”~classname_destructor”; 
+           } 
+        } 
+     int main (){ 
+       ClassName cname; 
+       ClassName cname1 = cname; 
+       return 0; 
+    } 

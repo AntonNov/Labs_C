@@ -1,0 +1,6 @@
+public struct Book
+{
+   public string Name;
+   public string Year;
+   public string Author;
+}
